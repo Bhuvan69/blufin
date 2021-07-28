@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+
+.pageHeader {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  position: relative;
+  .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    color: $white;
+    z-index: 1;
+    font-size: 100px;
+    animation-direction: normal;
+    animation: header 3s;
+  }
+}
+
+@keyframes header {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.pageHeader:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $black-overlay;
+  content: " ";
+}
+
+@media (max-width: 425px) {
+  .pageHeader {
+    .title {
+      font-size: 75px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .pageHeader {
+    .title {
+      font-size: 60px;
+    }
+  }
+}

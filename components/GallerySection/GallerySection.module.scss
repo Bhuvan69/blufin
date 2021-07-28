@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.galleryItem {
+  display: block;
+  width: 400px;
+  height: 250px;
+  background-size: cover;
+  box-shadow: $card-box-shadow;
+  border-radius: $card-radius;
+  margin: 1rem auto;
+  position: relative;
+  .gallerySectionImage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: $card-radius;
+  }
+}
+
+@media (max-width: 425px) {
+  .galleryItem {
+    width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .galleryItem {
+    width: 275px;
+  }
+}
+
+@media (max-width: 320px) {
+  .galleryItem {
+    width: 220px;
+  }
+}
+
+.left,
+.right {
+  width: 20px;
+  height: 40px;
+}
