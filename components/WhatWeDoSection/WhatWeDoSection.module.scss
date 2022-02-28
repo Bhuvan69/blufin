@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.whatWeDo {
+  padding-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  .itemCol {
+    margin-bottom: 75px;
+    .iconDiv {
+      margin-bottom: 20px;
+      color: $blufin-blue;
+    }
+    .subTitle {
+      font-size: 20px;
+    }
+  }
+}
