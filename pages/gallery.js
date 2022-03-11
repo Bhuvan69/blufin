@@ -5,7 +5,6 @@ import { useState } from "react";
 import FullScreenImage from "../components/FullScreenImage";
 
 const Gallery = (props) => {
-
   // States
   const [showImage, setShowImage] = useState(false);
   const [imageSrc, setImageSrc] = useState("");
@@ -46,7 +45,7 @@ const Gallery = (props) => {
 
 export async function getStaticProps() {
   const results = await fetch(
-    `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/image?expression="gallery"&max_results=100`,
+    `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/image?expression=gallery&max_results=100`,
     {
       headers: {
         Authorization: `Basic ${Buffer.from(
@@ -64,15 +63,17 @@ export async function getStaticProps() {
 
   const { resources } = results;
 
-  const images = resources.map((resource) => {
-    const { width, height } = resource;
-    return {
-      id: resource.asset_id,
-      title: resource.public_id,
-      image: resource.secure_url,
-      width,
-      height,
-    };
+  let images = [];
+  resources.map((resource) => {
+    const { width, height, public_id } = resource;
+    if (public_id.includes("blufin/gallery/"))
+      images.push({
+        id: resource.asset_id,
+        title: resource.public_id,
+        image: resource.secure_url,
+        width,
+        height,
+      });
   });
 
   return {

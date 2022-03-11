@@ -5,10 +5,30 @@ import GallerySection from "../components/GallerySection/GallerySection";
 import WhatWeDoSection from "../components/WhatWeDoSection/WhatWeDoSection";
 import Programs from "../components/Programs/Programs";
 import { Image, Video } from "cloudinary-react";
+import {
+  ABOUT_ID,
+  DONORS_ID,
+  NAVBAR_ID,
+  PROGRAMMES_ID,
+  TEAM_ID,
+} from "../utils/constants";
 
 const Landing = (props) => {
+  const setDivHeight = () => {
+    const navbarElementHeight = document.getElementById(NAVBAR_ID).offsetHeight;
+    const aboutElement = document.getElementById(ABOUT_ID);
+    const donorElement = document.getElementById(DONORS_ID);
+    const programElement = document.getElementById(PROGRAMMES_ID);
+    const teamElement = document.getElementById(TEAM_ID);
+
+    aboutElement.style.paddingTop = `${navbarElementHeight}px`;
+    donorElement.style.paddingTop = `${navbarElementHeight}px`;
+    programElement.style.paddingTop = `${navbarElementHeight}px`;
+    teamElement.style.paddingTop = `${navbarElementHeight}px`;
+  };
   useEffect(() => {
     document.getElementById("landing-video").play();
+    setDivHeight();
   }, []);
 
   return (
@@ -31,7 +51,7 @@ const Landing = (props) => {
             physical adversities in daily life.
           </h1>
         </div>
-        <Row className="about-us p-4 py-5 align-items-center mx-lg-5">
+        <Row className="about-us px-4 align-items-center mx-lg-5" id={ABOUT_ID}>
           <Col md={6} sm={12}>
             <img src="/images/about.jpg" alt="About" className="about-image" />
           </Col>
@@ -64,13 +84,26 @@ const Landing = (props) => {
           <div className="header text-center mb-5">
             What Do We <span className="font-weight-bold">Do?</span>
           </div>
+          <div className="text-center mb-5 sub-header">
+            Bringing sports to underprivileged and differently-abled
+          </div>
           <WhatWeDoSection />
         </div>
-        <div className="py-5">
+        <div id={PROGRAMMES_ID}>
           <div className="header text-center mb-5">
             Current <span className="font-weight-bold">Programs</span>
           </div>
           <Programs />
+        </div>
+        <div id={DONORS_ID}>
+          <div className="header text-center mb-5">
+            Our <span className="font-weight-bold">Donors</span>
+          </div>
+        </div>
+        <div id={TEAM_ID}>
+          <div className="header text-center mb-5">
+            Our <span className="font-weight-bold">Team</span>
+          </div>
         </div>
       </div>
     </DefaultLayout>

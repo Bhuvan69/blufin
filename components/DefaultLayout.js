@@ -27,7 +27,7 @@ const DefaultLayout = (props) => {
   return (
     <div className="default-layout">
       <BlufinNavbar />
-      <div className="  layout-body" id={LAYOUT_BODY_ID}>
+      <div className="layout-body" id={LAYOUT_BODY_ID}>
         {props.children}
       </div>
       <Footer />

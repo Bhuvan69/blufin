@@ -7,6 +7,10 @@
       text-align: center;
       height: 100%;
       box-shadow: 5px 5px 10px #0000004d;
+      .cardImg {
+        height: 300px;
+        object-fit: cover;
+      }
       .iconDiv {
         display: flex;
         justify-content: space-between;
