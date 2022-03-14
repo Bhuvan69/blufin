@@ -7,6 +7,8 @@ const ABOUT_ID = "about";
 const PROGRAMMES_ID = "programmes";
 const DONORS_ID = "donors";
 const TEAM_ID = "team";
+const EXPERT_ID = "experts";
+const WHAT_DO_WE_DO_ID = "wdwd";
 
 const NAV_LINKS = (
   <>
@@ -28,4 +30,6 @@ export {
   DONORS_ID,
   PROGRAMMES_ID,
   TEAM_ID,
+  EXPERT_ID,
+  WHAT_DO_WE_DO_ID,
 };

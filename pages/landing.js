@@ -8,10 +8,15 @@ import { Image, Video } from "cloudinary-react";
 import {
   ABOUT_ID,
   DONORS_ID,
+  EXPERT_ID,
   NAVBAR_ID,
   PROGRAMMES_ID,
   TEAM_ID,
+  WHAT_DO_WE_DO_ID,
 } from "../utils/constants";
+import DonorSection from "../components/DonorSection/DonorSection";
+import ExpertsSection from "../components/ExpertsSection/ExpertSection";
+import TeamSection from "../components/TeamSection/TeamSection";
 
 const Landing = (props) => {
   const setDivHeight = () => {
@@ -20,11 +25,15 @@ const Landing = (props) => {
     const donorElement = document.getElementById(DONORS_ID);
     const programElement = document.getElementById(PROGRAMMES_ID);
     const teamElement = document.getElementById(TEAM_ID);
+    const expertElement = document.getElementById(EXPERT_ID);
+    const wdwdElement = document.getElementById(WHAT_DO_WE_DO_ID);
 
     aboutElement.style.paddingTop = `${navbarElementHeight}px`;
     donorElement.style.paddingTop = `${navbarElementHeight}px`;
     programElement.style.paddingTop = `${navbarElementHeight}px`;
     teamElement.style.paddingTop = `${navbarElementHeight}px`;
+    expertElement.style.paddingTop = `${navbarElementHeight}px`;
+    wdwdElement.style.paddingTop = `${navbarElementHeight}px`;
   };
   useEffect(() => {
     document.getElementById("landing-video").play();
@@ -36,6 +45,12 @@ const Landing = (props) => {
       <div>
         <div className="landing-video mb-5">
           <div className="background" />
+          {/* <Image
+            src="https://res.cloudinary.com/blufin/image/upload/v1647273678/blufin/team/about_dkymr7.jpg"
+            className="landing-video-player"
+            width="100%"
+            height="auto"
+          /> */}
           <Video
             id="landing-video"
             publicId="blufin/swimmingTrim_geqwrn"
@@ -80,7 +95,7 @@ const Landing = (props) => {
           </div>
           <GallerySection />
         </div> */}
-        <div className="py-5">
+        <div id={WHAT_DO_WE_DO_ID}>
           <div className="header text-center mb-5">
             What Do We <span className="font-weight-bold">Do?</span>
           </div>
@@ -99,11 +114,19 @@ const Landing = (props) => {
           <div className="header text-center mb-5">
             Our <span className="font-weight-bold">Donors</span>
           </div>
+          <DonorSection />
+        </div>
+        <div id={EXPERT_ID}>
+          <div className="header text-center mb-5">
+            Our <span className="font-weight-bold">Experts</span>
+          </div>
+          <ExpertsSection />
         </div>
         <div id={TEAM_ID}>
           <div className="header text-center mb-5">
             Our <span className="font-weight-bold">Team</span>
           </div>
+          <TeamSection />
         </div>
       </div>
     </DefaultLayout>
