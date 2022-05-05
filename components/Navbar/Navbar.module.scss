@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.customNavbar{
+    .navbarBrand{
+        text-align: center;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: $blufin-bold-black;
+        font-weight: 700;
+    }
+    .navLinks{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $blufin-dark-blue;
+    }
+}

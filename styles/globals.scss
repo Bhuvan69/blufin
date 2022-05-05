@@ -1,6 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "./variables";
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
 
 // Brand styling
 img.blufin-brand-logo {
@@ -8,107 +12,51 @@ img.blufin-brand-logo {
   height: intrinsic;
 }
 
-.landing-video {
+.nav-link{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $blufin-bold-black;
   position: relative;
-  z-index: 0;
-  .landing-video-player {
+}
+
+.nav-link:hover {
+  color: $blufin-dark-blue !important;
+}
+
+.bf-nav-link:hover::before{
+  content: "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    border-bottom: 2px solid $blufin-dark-blue;
+}
+
+.nav-link.active{
+  color: $blufin-dark-blue !important;
+  position: relative;
+}
+
+.active:before{
+  content: "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    border-bottom: 2px solid $blufin-dark-blue;
+}
+
+@media (max-width: 768px) {
+  .nav-link.active{
+    color: $blufin-dark-blue !important;
     position: relative;
-    max-height: 500px;
-    object-fit: cover;
+    text-decoration: underline;
   }
-  .background {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: $black-overlay;
-    z-index: 1;
-  }
-  .landing-header {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    z-index: 2;
-    max-width: 800px;
-    color: $white;
-    animation-direction: normal;
-    animation: header 5s;
-    padding: 10px;
-  }
-}
 
-@keyframes header {
-  0% {
-    left: -100px;
-  }
-  100% {
-    left: 10%;
-  }
-}
-
-.highlight {
-  color: #329af7;
-}
-
-.about-us {
-  .about-image {
-    width: 100%;
-  }
-}
-
-.header {
-  font-size: 40px;
-  text-decoration: underline;
-  text-decoration-color: $blufin-blue;
-}
-
-.sub-header {
-  font-size: 30px;
-}
-
-.gallery-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.fullscreen-image {
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 1024px) {
-  .not-found {
-    width: fit-content;
-    text-align: center;
-  }
-}
-
-@media (max-width: 425px) {
-  .landing-video {
-    .landing-header {
-      top: 10%;
-      left: 0;
-      font-size: 28px;
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  .landing-video {
-    .landing-header {
-      top: 10%;
-      left: 0;
-      font-size: 25px;
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .landing-video {
-    .landing-header {
-      top: 8%;
-      left: 0;
-      font-size: 20px;
-    }
+  .active:before{
+    border-bottom: unset
   }
 }

@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.aboutSection {
+  .mainSection {
+    position: relative;
+    overflow: hidden;
+    background-image: url("../../public/background/about-background.png");
+    background-size: cover;
+    min-height: unset;
+    .headerWrapper {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .header {
+        font-weight: 600;
+        font-size: 110px;
+        line-height: 135px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .secondSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sectionImage {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutSection {
+    .secondSection {
+      .sectionImage {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .aboutSection {
+    .mainSection {
+      .headerWrapper {
+        .header {
+          font-weight: 600;
+          font-size: 70px;
+          line-height: 105px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .aboutSection {
+    .mainSection {
+      .headerWrapper {
+        padding-top: 200px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .aboutSection {
+    .mainSection {
+      min-height: 800px;
+    }
+  }
+}

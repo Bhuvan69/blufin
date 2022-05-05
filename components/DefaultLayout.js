@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useEffect } from "react";
 import { FOOTER_ID, LAYOUT_BODY_ID, NAVBAR_ID } from "../utils/constants";
 
-import BlufinNavbar from "./Navbar";
+import BlufinNavbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 
 const DefaultLayout = (props) => {

@@ -1,5 +1,4 @@
-import { Nav } from "react-bootstrap";
-import { FOOTER_ID, NAV_LINKS } from "../../utils/constants";
+import { FOOTER_ID } from "../../utils/constants";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
@@ -51,8 +50,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="d-none d-md-flex align-self-center">{NAV_LINKS}</div>
-        <div className="pt-3 d-block d-md-none text-center">{NAV_LINKS}</div>
       </div>
     </div>
   );
