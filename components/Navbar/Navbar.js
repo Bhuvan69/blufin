@@ -7,7 +7,7 @@ import {
   DONORS_ID,
   TEAM_ID,
   WHAT_DO_WE_DO_ID,
-  ATHELETES_ID,
+  ATHLETES_ID,
   ECOSYSTEM_ID,
   MEDIA_ID,
   CONTACT_ID,
@@ -57,7 +57,7 @@ export default function BlufinNavbar() {
             <Nav.Link className="bf-nav-link" href={`landing#${PROGRAMS_ID}`}>
               Programs
             </Nav.Link>
-            <Nav.Link className="bf-nav-link" href={`landing#${ATHELETES_ID}`}>
+            <Nav.Link className="bf-nav-link" href={`landing#${ATHLETES_ID}`}>
               Athletes
             </Nav.Link>
             <Nav.Link className="bf-nav-link" href={`landing#${ECOSYSTEM_ID}`}>

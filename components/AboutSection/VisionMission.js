@@ -6,7 +6,11 @@ const VisionMission = (props) => {
   const [show, setShow] = useState(true);
 
   return (
-    <div className={styles.visionMission} onClick={() => setShow(!show)}>
+    <div
+      className={styles.visionMission}
+      role="button"
+      onClick={() => setShow(!show)}
+    >
       <div className="d-flex align-items-center">
         <Image src={show ? "icons/open.png" : "icons/close.png"} />
         <div className={show ? styles.open : styles.close}>{props.title}</div>

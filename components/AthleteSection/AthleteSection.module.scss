@@ -1,0 +1,58 @@
+.athleteSection {
+  background-color: #012060;
+  .athletesCards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    .athleteCard {
+      position: relative;
+      padding-bottom: 30px;
+      .image {
+        position: relative;
+        width: 350px;
+        height: 405px;
+        object-fit: cover;
+        filter: grayscale(20%);
+      }
+      .name {
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+        color: white;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .athleteSection {
+    .athletesCards {
+      .athleteCard {
+        .image {
+          width: 300px;
+          height: 375px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .athleteSection {
+    .athletesCards {
+      flex-direction: column;
+      .athleteCard {
+        .image {
+          width: 300px;
+          height: 375px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

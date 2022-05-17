@@ -8,7 +8,7 @@ const TEAM_ID = "team";
 const ECOSYSTEM_ID = "experts";
 const WHAT_DO_WE_DO_ID = "wdwd";
 const MEDIA_ID = "media";
-const ATHELETES_ID = "athletes";
+const ATHLETES_ID = "athletes";
 const CONTACT_ID = "contact";
 
 export {
@@ -22,6 +22,6 @@ export {
   ECOSYSTEM_ID,
   WHAT_DO_WE_DO_ID,
   MEDIA_ID,
-  ATHELETES_ID,
+  ATHLETES_ID,
   CONTACT_ID,
 };

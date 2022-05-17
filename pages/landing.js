@@ -7,7 +7,7 @@ import Programs from "../components/Programs/Programs";
 import { Image, Video } from "cloudinary-react";
 import {
   ABOUT_ID,
-  ATHELETES_ID,
+  ATHLETES_ID,
   CONTACT_ID,
   DONORS_ID,
   ECOSYSTEM_ID,
@@ -22,6 +22,8 @@ import ExpertsSection from "../components/ExpertsSection/ExpertSection";
 import TeamSection from "../components/TeamSection/TeamSection";
 import AboutSection from "../components/AboutSection/AboutSection";
 import ProgramSection from "../components/ProgramsSection/ProgramSection";
+import AthleteSection from "../components/AthleteSection/AthleteSection";
+import EcoSystemSection from "../components/EcoSystemSection/EcoSystemSection";
 
 const Landing = (props) => {
   const setDivHeight = () => {
@@ -31,8 +33,8 @@ const Landing = (props) => {
     const teamElement = document.getElementById(TEAM_ID);
     const expertElement = document.getElementById(ECOSYSTEM_ID);
     const wdwdElement = document.getElementById(WHAT_DO_WE_DO_ID);
-    const athletesElement = document.getElementById(ATHELETES_ID);
-    const mediaElement = document.getElementById(ATHELETES_ID);
+    const athletesElement = document.getElementById(ATHLETES_ID);
+    const mediaElement = document.getElementById(ATHLETES_ID);
     const contactElement = document.getElementById(CONTACT_ID);
 
     // aboutElement.style.paddingTop = `${navbarElementHeight}px`;
@@ -58,9 +60,15 @@ const Landing = (props) => {
         <div id={PROGRAMS_ID}>
           <ProgramSection />
         </div>
-        <div id={ATHELETES_ID}></div>
-        <div id={ECOSYSTEM_ID}></div>
-        <div id={TEAM_ID}></div>
+        <div id={ATHLETES_ID}>
+          <AthleteSection />
+        </div>
+        <div id={ECOSYSTEM_ID}>
+          <EcoSystemSection />
+        </div>
+        <div id={TEAM_ID}>
+          <TeamSection />
+        </div>
         <div id={MEDIA_ID}></div>
         <div id={CONTACT_ID}></div>
         <div className="header text-center mb-5">
@@ -93,7 +101,6 @@ const Landing = (props) => {
         <div className="header text-center mb-5">
           Our <span className="font-weight-bold">Team</span>
         </div>
-        <TeamSection />
       </div>
     </DefaultLayout>
   );
