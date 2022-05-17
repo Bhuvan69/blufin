@@ -1,0 +1,27 @@
+.programSection {
+  .programCard {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    .cardImg {
+      width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+    .body {
+      height: 100%;
+      .title {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 39px;
+      }
+      .itemList {
+        padding-left: 1rem;
+        .point {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

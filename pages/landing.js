@@ -21,6 +21,7 @@ import DonorSection from "../components/DonorSection/DonorSection";
 import ExpertsSection from "../components/ExpertsSection/ExpertSection";
 import TeamSection from "../components/TeamSection/TeamSection";
 import AboutSection from "../components/AboutSection/AboutSection";
+import ProgramSection from "../components/ProgramsSection/ProgramSection";
 
 const Landing = (props) => {
   const setDivHeight = () => {
@@ -54,7 +55,9 @@ const Landing = (props) => {
           <AboutSection />{" "}
         </div>
         <div id={WHAT_DO_WE_DO_ID}></div>
-        <div id={PROGRAMS_ID}></div>
+        <div id={PROGRAMS_ID}>
+          <ProgramSection />
+        </div>
         <div id={ATHELETES_ID}></div>
         <div id={ECOSYSTEM_ID}></div>
         <div id={TEAM_ID}></div>
