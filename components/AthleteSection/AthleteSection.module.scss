@@ -56,3 +56,15 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .athleteSection {
+    .athletesCards {
+      .athleteCard {
+        .image {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

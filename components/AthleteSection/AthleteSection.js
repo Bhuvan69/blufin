@@ -18,28 +18,16 @@ const AthleteSection = () => {
           white={true}
         />
         <div className={styles.athletesCards}>
-          <div
-            md={12}
-            lg={4}
-            className="d-flex flex-column justify-content-center mt-lg-5"
-          >
+          <div className="d-flex flex-column justify-content-center mt-lg-5">
             <AtheleteCard image="/program/grassroot.jpg" name="Ashith Surya" />
             <AtheleteCard image="/program/grassroot.jpg" name="Ashith Surya" />
           </div>
-          <div
-            md={12}
-            lg={4}
-            className="d-flex flex-column justify-content-center"
-          >
+          <div className="d-flex flex-column justify-content-center">
             <AtheleteCard image="/program/grassroot.jpg" name="Ashith Surya" />
             <AtheleteCard image="/program/grassroot.jpg" name="Ashith Surya" />
             <AtheleteCard image="/program/grassroot.jpg" name="Ashith Surya" />
           </div>
-          <div
-            md={12}
-            lg={4}
-            className="d-flex flex-column justify-content-center mb-lg-5"
-          >
+          <div className="d-flex flex-column justify-content-center mb-lg-5">
             <AtheleteCard image="/program/grassroot.jpg" name="Ashith Surya" />
             <AtheleteCard image="/program/grassroot.jpg" name="Ashith Surya" />
           </div>

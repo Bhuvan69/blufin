@@ -24,6 +24,8 @@ import AboutSection from "../components/AboutSection/AboutSection";
 import ProgramSection from "../components/ProgramsSection/ProgramSection";
 import AthleteSection from "../components/AthleteSection/AthleteSection";
 import EcoSystemSection from "../components/EcoSystemSection/EcoSystemSection";
+import MediaSection from "../components/MediaSection/MediaSection";
+import ContactUsSection from "../components/ContactUsSection/ContactUsSection";
 
 const Landing = (props) => {
   const setDivHeight = () => {
@@ -69,37 +71,14 @@ const Landing = (props) => {
         <div id={TEAM_ID}>
           <TeamSection />
         </div>
-        <div id={MEDIA_ID}></div>
-        <div id={CONTACT_ID}></div>
-        <div className="header text-center mb-5">
-          What Do We <span className="font-weight-bold">Do?</span>
+        <div id={MEDIA_ID}>
+          <MediaSection />
         </div>
-        <div className="text-center mb-5 sub-header">
-          Bringing sports to underprivileged and differently-abled
+        <div>
+          <GallerySection />
         </div>
-        <WhatWeDoSection />
-      </div>
-      <div id={PROGRAMS_ID}>
-        <div className="header text-center mb-5">
-          Current <span className="font-weight-bold">Programs</span>
-        </div>
-        <Programs />
-      </div>
-      <div id={DONORS_ID}>
-        <div className="header text-center mb-5">
-          Our <span className="font-weight-bold">Donors</span>
-        </div>
-        <DonorSection />
-      </div>
-      <div id={ECOSYSTEM_ID}>
-        <div className="header text-center mb-5">
-          Our <span className="font-weight-bold">Experts</span>
-        </div>
-        <ExpertsSection />
-      </div>
-      <div id={TEAM_ID}>
-        <div className="header text-center mb-5">
-          Our <span className="font-weight-bold">Team</span>
+        <div id={CONTACT_ID}>
+          <ContactUsSection />
         </div>
       </div>
     </DefaultLayout>

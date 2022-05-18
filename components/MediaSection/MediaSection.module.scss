@@ -1,0 +1,43 @@
+.mediaSection {
+  background: #012060;
+  margin-top: -1px;
+  .media {
+    margin-top: 10px;
+    background-color: white;
+    padding: 20px;
+    .mediaLogo {
+      height: 150px;
+      width: 100%;
+      object-fit: contain;
+      padding: 25px 0;
+    }
+    .content {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1d1d1d;
+      min-height: 200px;
+      border-top: 1px solid #ebf0f2;
+      margin-top: 10px;
+      padding-top: 25px;
+    }
+    .readMore {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #012060;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .mediaSection {
+    .media {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      .mediaLogo {
+        width: 100%;
+      }
+    }
+  }
+}

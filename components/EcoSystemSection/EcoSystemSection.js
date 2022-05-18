@@ -91,7 +91,7 @@ const EcoSystemSection = () => {
             <Row>
               {experts.map((expert) => (
                 <Col sm={12} md={4} lg={3} className="mt-5">
-                  <Image src={expert.image} className={styles.image} />
+                  <Image src={expert.image} className={styles.expertImage} />
                   <div className={styles.expertName}>{expert.name}</div>
                   <ul className={styles.body}>
                     {expert.body.map((point) => (

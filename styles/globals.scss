@@ -1,9 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 @import "./variables";
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 // Brand styling
@@ -12,7 +12,7 @@ img.blufin-brand-logo {
   height: intrinsic;
 }
 
-.nav-link{
+.nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -24,39 +24,39 @@ img.blufin-brand-logo {
   color: $blufin-dark-blue !important;
 }
 
-.bf-nav-link:hover::before{
+.bf-nav-link:hover::before {
   content: "";
-    position: absolute;
-    width: 45%;
-    height: 1px;
-    bottom: 0.5rem;
-    left: 0.5rem;
-    border-bottom: 2px solid $blufin-dark-blue;
+  position: absolute;
+  width: 45%;
+  height: 1px;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  border-bottom: 2px solid $blufin-dark-blue;
 }
 
-.nav-link.active{
+.nav-link.active {
   color: $blufin-dark-blue !important;
   position: relative;
 }
 
-.active:before{
+.active:before {
   content: "";
-    position: absolute;
-    width: 45%;
-    height: 1px;
-    bottom: 0.5rem;
-    left: 0.5rem;
-    border-bottom: 2px solid $blufin-dark-blue;
+  position: absolute;
+  width: 45%;
+  height: 1px;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  border-bottom: 2px solid $blufin-dark-blue;
 }
 
 @media (max-width: 768px) {
-  .nav-link.active{
+  .nav-link.active {
     color: $blufin-dark-blue !important;
     position: relative;
     text-decoration: underline;
   }
 
-  .active:before{
-    border-bottom: unset
+  .active:before {
+    border-bottom: unset;
   }
 }

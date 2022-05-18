@@ -4,16 +4,24 @@
   margin-top: 6rem;
   position: relative;
 
+  .footerLeft {
+    .logoText {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: uppercase;
+      margin-right: 10px;
+    }
+  }
   .footerContent {
-    color: $black;
-    background-color: $background-grey;
-    box-shadow: 0 0 0.5rem 0.5rem rgb(0 0 0 / 15%);
+    color: #2a2a2a;
   }
   .siteContactDetails {
     list-style-type: none;
     padding: 0;
   }
   .socialMedia {
+    color: #2a2a2a;
     justify-content: flex-start;
     a {
       text-align: right;

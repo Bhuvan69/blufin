@@ -1,56 +1,75 @@
-import { FOOTER_ID } from "../../utils/constants";
+import { Container, Image, NavLink } from "react-bootstrap";
+import {
+  ABOUT_ID,
+  ATHLETES_ID,
+  ECOSYSTEM_ID,
+  FOOTER_ID,
+  MEDIA_ID,
+  PROGRAMS_ID,
+  TEAM_ID,
+} from "../../utils/constants";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
   const socialMedia = (
     <div className={`${styles.socialMedia} my-2`}>
       <a href="https://www.facebook.com/BakersMarketUK/">
-        <img src="socialMedia/facebook.png" alt="Facebook" />
+        <img src="socialMedia/facebook.svg" alt="Facebook" />
       </a>
       <a href="https://www.instagram.com/bakersmarketuk/">
-        <img src="socialMedia/instagram.png" alt="Instagram" />
+        <img src="socialMedia/instagram.svg" alt="Instagram" />
       </a>
       <a href="https://twitter.com/BakersMarketUK">
-        <img src="socialMedia/twitter.png" alt="Twitter" />
+        <img src="socialMedia/twitter.svg" alt="Twitter" />
       </a>
       <a href="https://www.youtube.com/channel/UCwz4l_CJAbeJKvdHZuob9Yg/">
-        <img src="socialMedia/youtube.png" alt="Youtube" />
+        <img src="socialMedia/youtube.svg" alt="Youtube" />
       </a>
       <a href="https://www.linkedin.com/company/bakersmarket">
-        <img src="socialMedia/linkedin.png" alt="LinkedIn" />
+        <img src="socialMedia/linkedin.svg" alt="LinkedIn" />
       </a>
     </div>
   );
 
   return (
     <div id={FOOTER_ID} className={`${styles.footer}`}>
-      <div
-        className={`${styles.footerContent} p-4 container-fluid d-flex flex-wrap justify-content-center justify-content-md-between`}
-      >
-        <div
-          className={`${styles.footerLeft} d-flex flex-column justify-content-center`}
-        >
-          <div>
-            <img
-              src="/images/blufinlogo.png"
-              alt="Blufin"
-              className="blufin-brand-logo"
-            />{" "}
-            BluFin Foundation
+      <Container>
+        <div className={`${styles.footerContent}`}>
+          <div className="w-100 text-center py-4">
+            <Image
+              src="icons/top.svg"
+              type="button"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            />
           </div>
-          {socialMedia}
-          <ul className={`${styles.siteContactDetails}`}>
-            <li>
-              <a href="mailto:contactus@blufinfoundation.com">
-                contactus@blufinfoundation.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:8073344898">+91-8073344898</a>
-            </li>
-          </ul>
+
+          <div
+            className={`${styles.footerLeft} d-none d-lg-flex d-md-none justify-content-between`}
+          >
+            <div className="d-flex">
+              <NavLink href={`landing#${ABOUT_ID}`} className="pl-0">
+                About us
+              </NavLink>
+              <NavLink href={`landing#${PROGRAMS_ID}`}>Programs</NavLink>
+              <NavLink href={`landing#${ATHLETES_ID}`}>Athletes</NavLink>
+              <NavLink href={`landing#${ECOSYSTEM_ID}`}>Ecosystem</NavLink>
+              <NavLink href={`landing#${TEAM_ID}`}>Team</NavLink>
+              <NavLink href={`landing#${MEDIA_ID}`}>Media</NavLink>
+            </div>
+            <div className="d-flex text-center align-items-center">
+              <div className={styles.logoText}>BluFin Foundation</div>
+              <img
+                src="/images/blufinlogo.png"
+                alt="Blufin"
+                className="blufin-brand-logo"
+              />
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="d-flex justify-content-between align-items-center flex-column flex-lg-row">
+          {socialMedia} <div>© Copyright 2022 Bluefin Foundation</div>
+        </div>
+      </Container>
     </div>
   );
 };
