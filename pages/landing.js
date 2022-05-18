@@ -58,7 +58,9 @@ const Landing = (props) => {
         <div id={ABOUT_ID}>
           <AboutSection />{" "}
         </div>
-        <div id={WHAT_DO_WE_DO_ID}></div>
+        <div id={WHAT_DO_WE_DO_ID}>
+          <WhatWeDoSection />
+        </div>
         <div id={PROGRAMS_ID}>
           <ProgramSection />
         </div>

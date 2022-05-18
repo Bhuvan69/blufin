@@ -1,18 +1,31 @@
 @import "../../styles/variables";
 
 .whatWeDo {
+  background: url("../../public/background/what-we-do.png");
+  min-height: 942px;
   padding-top: 50px;
-  text-align: center;
   display: flex;
-  justify-content: space-around;
-  .itemCol {
-    margin-bottom: 75px;
-    .iconDiv {
-      margin-bottom: 20px;
-      color: $blufin-blue;
-    }
-    .subTitle {
-      font-size: 20px;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  .content {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    .itemCol {
+      .card {
+        border: 2px solid;
+        padding: 20px;
+        height: 100%;
+        .iconDiv {
+          margin-bottom: 20px;
+          color: $blufin-blue;
+        }
+        .subTitle {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
     }
   }
 }

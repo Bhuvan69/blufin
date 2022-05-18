@@ -7,6 +7,7 @@
     line-height: 36px;
     color: $blufin-header-light-black;
     text-transform: uppercase;
+    overflow-wrap: anywhere;
   }
   .header {
     font-weight: 700;
@@ -14,6 +15,7 @@
     line-height: 60px;
     color: $blufin-bold-black;
     text-transform: uppercase;
+    overflow-wrap: anywhere;
   }
 
   .headerWhite {
