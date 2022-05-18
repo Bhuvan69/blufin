@@ -1,55 +1,47 @@
-import { Image } from "cloudinary-react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Image } from "react-bootstrap";
 import CommonHeader from "../CommonHeader/CommonHeader";
 import styles from "./TeamSection.module.scss";
 
 const TeamSection = () => {
   const teamMembers = [
     {
-      image:
-        "https://res.cloudinary.com/blufin/image/upload/v1647270441/blufin/team/Amar_drq5nn.jpg",
+      image: "team/Amar.jpg",
       name: "Amar",
       designation: "Trustee",
       detail: "Solution Architect, Leading AI firm",
     },
     {
-      image:
-        "https://res.cloudinary.com/blufin/image/upload/v1647270420/blufin/team/Vyshak_simfzq.jpg",
+      image: "team/Vyshak.jpg",
       name: "Vyshak",
       designation: "Trustee",
       detail: "Managment Consultant, Big 5 consulting",
     },
     {
-      image:
-        "https://res.cloudinary.com/blufin/image/upload/v1647270415/blufin/team/Sharath_fosnrx.jpg",
+      image: "team/Sharath.jpg",
       name: "Sharath M Gayakwad",
       designation: "Trustee",
       detail: "International Para swimmer, Arjuna awardee",
     },
     {
-      image:
-        "https://res.cloudinary.com/blufin/image/upload/v1647270433/blufin/team/Ashwin_y5lgre.jpg",
+      image: "team/Ashwin.jpg",
       name: "Ashwin",
       designation: "Growth",
       detail: "Sr Data Analyst, Silicon Valley Ed-Tech firm",
     },
     {
-      image:
-        "https://res.cloudinary.com/blufin/image/upload/v1647270408/blufin/team/Pavan_jsetsx.jpg",
+      image: "team/Pavan.jpg",
       name: "Pavan",
       designation: "Marketing",
       detail: "Product Marketing, Leading AI firm",
     },
     {
-      image:
-        "https://res.cloudinary.com/blufin/image/upload/v1647273038/blufin/team/IMG_20210829_215912_857_wdbwoz.webp",
+      image: "team/Bhuvan.jpg",
       name: "Bhuvan",
       designation: "Tech",
       detail: "Engineer, Leading tech firm",
     },
     {
-      image:
-        "https://res.cloudinary.com/blufin/image/upload/v1647270430/blufin/team/Nidhi_fxkq7n.jpg",
+      image: "team/Nidhi.jpg",
       name: "Nidhish",
       designation: "Trustee",
       detail: "Swim coach & National softball player",

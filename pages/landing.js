@@ -1,15 +1,11 @@
 import DefaultLayout from "../components/DefaultLayout";
 import { useEffect } from "react";
-import { Row, Col } from "react-bootstrap";
 import GallerySection from "../components/GallerySection/GallerySection";
 import WhatWeDoSection from "../components/WhatWeDoSection/WhatWeDoSection";
-import Programs from "../components/Programs/Programs";
-import { Image, Video } from "cloudinary-react";
 import {
   ABOUT_ID,
   ATHLETES_ID,
   CONTACT_ID,
-  DONORS_ID,
   ECOSYSTEM_ID,
   MEDIA_ID,
   NAVBAR_ID,
@@ -17,8 +13,6 @@ import {
   TEAM_ID,
   WHAT_DO_WE_DO_ID,
 } from "../utils/constants";
-import DonorSection from "../components/DonorSection/DonorSection";
-import ExpertsSection from "../components/ExpertsSection/ExpertSection";
 import TeamSection from "../components/TeamSection/TeamSection";
 import AboutSection from "../components/AboutSection/AboutSection";
 import ProgramSection from "../components/ProgramsSection/ProgramSection";

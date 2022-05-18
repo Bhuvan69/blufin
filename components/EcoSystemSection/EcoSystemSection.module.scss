@@ -7,23 +7,45 @@
   .image {
     width: 100%;
     object-fit: contain;
+    height: 150px;
+    margin-top: 0;
   }
-  .expertImage {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  .expert {
+    margin-top: 0;
+    .expertImage {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-top: 0;
+      margin-right: 0;
+    }
+    .expertName {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 30px;
+    }
+    .body {
+      padding-left: 1rem;
+      .point {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
   }
-  .expertName {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 30px;
-  }
-  .body {
-    padding-left: 1rem;
-    .point {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 24px;
+}
+
+@media (max-width: 425px) {
+  .ecosystemSection {
+    .image {
+      margin-top: 2rem;
+    }
+    .expert {
+      margin-top: 2rem;
+      .expertImage {
+        max-width: 50%;
+        margin-right: 10px;
+      }
     }
   }
 }

@@ -3,48 +3,38 @@ import CommonHeader from "../CommonHeader/CommonHeader";
 import styles from "./EcoSystemSection.module.scss";
 
 const EcoSystemSection = () => {
-  const donors = ["donors/1.jpg", "donors/2.jpg"];
-  const partners = ["donors/1.jpg", "donors/2.jpg"];
+  const donors = [
+    "donors/Antaprerana.png",
+    "donors/Accel.png",
+    "donors/Kaleyra.jpg",
+  ];
+  const partners = [
+    "partners/zeeswim.png",
+    "partners/shishu.png",
+    "partners/mlc.png",
+    "partners/fastnup.png",
+  ];
   const experts = [
     {
-      image: "donors/1.jpg",
+      image: "experts/dr-srinand.jpg",
       name: "Dr. Srinand Srinivas",
       body: [
         "Team Doctor, KXIP - IPL",
-        " Olympic Committee Licensed Sports Medicine Specialist",
+        "Olympic Committee Licensed Sports Medicine Specialist",
       ],
     },
     {
-      image: "donors/1.jpg",
-      name: "Dr. Srinand Srinivas",
+      image: "experts/mahesh.png",
+      name: "Mahesh Kumar",
       body: [
-        "Team Doctor, KXIP - IPL",
-        " Olympic Committee Licensed Sports Medicine Specialist",
+        "Strength and Conditioning Coach",
+        "Pro-kabaddi and Karnataka basketball team trainer",
       ],
     },
     {
-      image: "donors/1.jpg",
-      name: "Dr. Srinand Srinivas",
-      body: [
-        "Team Doctor, KXIP - IPL",
-        " Olympic Committee Licensed Sports Medicine Specialist",
-      ],
-    },
-    {
-      image: "donors/1.jpg",
-      name: "Dr. Srinand Srinivas",
-      body: [
-        "Team Doctor, KXIP - IPL",
-        " Olympic Committee Licensed Sports Medicine Specialist",
-      ],
-    },
-    {
-      image: "donors/1.jpg",
-      name: "Dr. Srinand Srinivas",
-      body: [
-        "Team Doctor, KXIP - IPL",
-        " Olympic Committee Licensed Sports Medicine Specialist",
-      ],
+      image: "experts/silky.jpg",
+      name: "Silky Mahajan",
+      body: ["Renowned Sports Nutrition Expertrts Medicine Specialist"],
     },
   ];
   return (
@@ -55,49 +45,55 @@ const EcoSystemSection = () => {
           subHeader="Para-swimming"
           white={false}
         />
-        <Row>
-          <Col sm={12} md={2} className="mt-5">
+        <Row className="mt-5">
+          <Col sm={12} md={2} className="">
             <div className={styles.header}>Donors</div>
           </Col>
           <Col sm={12} md={9}>
-            <Row>
+            <Row className="align-items-center">
               {donors.map((donor) => (
-                <Col sm={12} md={4} lg={3} className="mt-5">
+                <Col sm={12} md={4} lg={3}>
                   <Image src={donor} className={styles.image} />
                 </Col>
               ))}
             </Row>
           </Col>
         </Row>
-        <Row>
-          <Col sm={12} md={2} className="mt-5">
+        <Row className="mt-5">
+          <Col sm={12} md={2} className="">
             <div className={styles.header}>Partners</div>
           </Col>
           <Col sm={12} md={9}>
-            <Row>
+            <Row className="align-items-center">
               {partners.map((partner) => (
-                <Col sm={12} md={4} lg={3} className="mt-5">
+                <Col sm={12} md={4} lg={3}>
                   <Image src={partner} className={styles.image} />
                 </Col>
               ))}
             </Row>
           </Col>
         </Row>
-        <Row>
-          <Col sm={12} md={2} className="mt-5">
+        <Row className="mt-5">
+          <Col sm={12} md={2} className="">
             <div className={styles.header}>Experts</div>
           </Col>
           <Col sm={12} md={9}>
             <Row>
               {experts.map((expert) => (
-                <Col sm={12} md={4} lg={3} className="mt-5">
-                  <Image src={expert.image} className={styles.expertImage} />
-                  <div className={styles.expertName}>{expert.name}</div>
-                  <ul className={styles.body}>
-                    {expert.body.map((point) => (
-                      <li className={styles.point}>{point}</li>
-                    ))}
-                  </ul>
+                <Col sm={12} md={4} lg={3}>
+                  <div
+                    className={`d-flex flex-row flex-md-column align-items-start ${styles.expert}`}
+                  >
+                    <Image src={expert.image} className={styles.expertImage} />
+                    <div>
+                      <div className={styles.expertName}>{expert.name}</div>
+                      <ul className={styles.body}>
+                        {expert.body.map((point) => (
+                          <li className={styles.point}>{point}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </Col>
               ))}
             </Row>
