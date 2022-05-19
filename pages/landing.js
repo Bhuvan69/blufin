@@ -30,7 +30,7 @@ const Landing = (props) => {
     const expertElement = document.getElementById(ECOSYSTEM_ID);
     const wdwdElement = document.getElementById(WHAT_DO_WE_DO_ID);
     const athletesElement = document.getElementById(ATHLETES_ID);
-    const mediaElement = document.getElementById(ATHLETES_ID);
+    const mediaElement = document.getElementById(MEDIA_ID);
     const contactElement = document.getElementById(CONTACT_ID);
 
     // aboutElement.style.paddingTop = `${navbarElementHeight}px`;
