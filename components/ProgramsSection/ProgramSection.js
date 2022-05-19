@@ -19,7 +19,7 @@ const ProgramSection = () => {
         "We have signed 4 para-swimmers looking after their end to end expenses as",
         "Working towards bringing glory for the country",
       ],
-      image: "/program/grassroot.jpg",
+      image: "/program/for-the-win.jpg",
     },
     {
       title: "State Meets",
