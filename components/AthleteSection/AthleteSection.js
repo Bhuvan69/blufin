@@ -12,7 +12,7 @@ const AthleteSection = () => {
     {
       name: "ashith surya",
       image: "/athletes/ashith.png",
-      dob: "12/12/1996",
+      dob: "1/1/1996",
       program: "For The Win",
       sport: "badminton",
       medals: {
@@ -31,7 +31,7 @@ const AthleteSection = () => {
     {
       name: "vasantha kumar",
       image: "/athletes/vasantha.png",
-      dob: "12/12/1996",
+      dob: "1/1/1995",
       program: "For The Win",
       sport: "badminton",
       medals: {
@@ -47,7 +47,7 @@ const AthleteSection = () => {
     {
       name: "punith nandakumar",
       image: "/athletes/punith.jpeg",
-      dob: "12/12/1996",
+      dob: "1/1/2001",
       program: "For The Win",
       sport: "Para-swimming",
       medals: {
@@ -64,7 +64,7 @@ const AthleteSection = () => {
     {
       name: "gopichand lingutla",
       image: "/athletes/gopichand.jpeg",
-      dob: "12/12/1996",
+      dob: "1/1/2007",
       program: "For The Win",
       sport: "Para-swimming",
       medals: {
@@ -77,7 +77,7 @@ const AthleteSection = () => {
     {
       name: "yojit nallana",
       image: "/athletes/yojit.jpg",
-      dob: "12/12/1996",
+      dob: "1/1/2007",
       program: "For The Win",
       sport: "Para-swimming",
       medals: {
@@ -90,7 +90,7 @@ const AthleteSection = () => {
     {
       name: "PRATHAMESH SAMBHAJI KAPADE",
       image: "/athletes/prathamesh.png",
-      dob: "12/12/1996",
+      dob: "1/1/2002",
       program: "For The Win",
       sport: "Para-swimming",
       medals: {
@@ -103,7 +103,7 @@ const AthleteSection = () => {
     {
       name: "PAVAN DHANANJAYA",
       image: "/athletes/pavan.png",
-      dob: "12/12/1996",
+      dob: "1/1/2007",
       program: "For The Win",
       sport: "swimming",
       medals: {

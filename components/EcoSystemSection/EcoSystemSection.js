@@ -40,12 +40,12 @@ const EcoSystemSection = () => {
     {
       image: "experts/anirudh.jpg",
       name: "Anirudh Kulkarni",
-      body: ["Legal Advisor"],
+      body: ["Legal Advisor", "Advocate, Karnataka High Court"],
     },
     {
-      image: "experts/Cheryl.jpg",
-      name: "Cheryl",
-      body: ["Communication and content specialist"],
+      image: "experts/cheryl.jpeg",
+      name: "Cheryl Braggs",
+      body: ["Communications"],
     },
   ];
   return (
