@@ -16,7 +16,7 @@ const ProgramSection = () => {
       title: "For The Win",
       body: [
         "FTW program is aimed at supporting and nurturing professional athletes",
-        "We have signed 4 para-swimmers looking after their end to end expenses as",
+        "Supporting 7 international atheletes - 4 para swimmers, 1 swimmer, and 2 badmiton players",
         "Working towards bringing glory for the country",
       ],
       image: "/program/for-the-win.jpg",
