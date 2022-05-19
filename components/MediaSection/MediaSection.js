@@ -5,10 +5,10 @@ import styles from "./MediaSection.module.scss";
 const MediaSection = () => {
   const medias = [
     {
-      logo: "https://res.cloudinary.com/blufin/image/upload/v1647270430/blufin/team/Nidhi_fxkq7n.jpg",
+      logo: "media/logical-indian.png",
       content:
         "Advocating Accessibility! This Foundation Works Towards Taking Sports To The Grassroots",
-      link: "http://localhost:3002/landing#media",
+      link: "https://thelogicalindian.com/inclusivity/blufin-foundation-32205",
     },
   ];
   return (
@@ -19,7 +19,9 @@ const MediaSection = () => {
           {medias.map((media, i) => (
             <Col sm={12} md={6} lg={4} key={`media-${i}`}>
               <div className={styles.media}>
-                <Image src={media.logo} className={styles.mediaLogo} />
+                <div className="d-flex justify-content-center">
+                  <Image src={media.logo} className={styles.mediaLogo} />
+                </div>
                 <div className={styles.content}>{media.content}</div>
                 <a href={media.link} target="_blank">
                   <div className={styles.readMore}>Read more</div>

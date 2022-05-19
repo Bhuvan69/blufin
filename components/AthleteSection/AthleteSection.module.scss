@@ -23,8 +23,86 @@
         font-weight: 700;
         font-size: 30px;
         line-height: 45px;
+        text-transform: uppercase;
       }
     }
+  }
+}
+
+.athleteModal {
+  .imageSection {
+    position: relative;
+    .athleteImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .name {
+      position: absolute;
+      bottom: 20px;
+      left: 40px;
+      color: white;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+  }
+
+  .closeModal {
+    background-color: white;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    padding: 15px;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+  }
+
+  .section {
+    padding: 25px 0;
+    border-bottom: 1px solid #dcdcdc;
+
+    .header {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .bold {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .subheader {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #757575;
+    }
+
+    .point {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1d1d1d;
+    }
+
+    .award {
+      border-bottom: 1px solid #dcdcdc;
+      margin-top: 10px;
+    }
+  }
+  .noborder {
+    border: none;
   }
 }
 

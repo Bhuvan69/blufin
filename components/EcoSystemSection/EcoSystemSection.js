@@ -10,7 +10,7 @@ const EcoSystemSection = () => {
   ];
   const partners = [
     "partners/zeeswim.png",
-    "partners/shishu.png",
+    "partners/shishu.jpg",
     "partners/mlc.png",
     "partners/fastnup.png",
   ];
@@ -35,6 +35,16 @@ const EcoSystemSection = () => {
       image: "experts/silky.jpg",
       name: "Silky Mahajan",
       body: ["Renowned Sports Nutrition Expertrts Medicine Specialist"],
+    },
+    {
+      image: "experts/anirudh.jpg",
+      name: "Anirudh A Kulkarni",
+      body: ["Leagal Advisor"],
+    },
+    {
+      image: "experts/Cheryl.jpg",
+      name: "Cheryl",
+      body: ["Communication and content specialist"],
     },
   ];
   return (
