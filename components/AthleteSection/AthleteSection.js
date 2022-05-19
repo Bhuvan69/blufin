@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Image } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
 import CommonHeader from "../CommonHeader/CommonHeader";
 import AthleteModal from "./AthleteModal";
 import styles from "./AthleteSection.module.scss";
@@ -156,21 +156,21 @@ const AthleteSection = () => {
           subHeader="OUR ACHIVEMENT FROM"
           white={true}
         />
-        <div className={styles.athletesCards}>
-          <div className="d-flex flex-column justify-content-center mt-lg-5">
+        <Row className={styles.athletesCards}>
+          <Col lg={4} md={12} sm={12}>
             <AtheleteCard info={athletes[0]} />
             <AtheleteCard info={athletes[1]} />
-          </div>
-          <div className="d-flex flex-column justify-content-center">
+          </Col>
+          <Col lg={4} md={12} sm={12}>
             <AtheleteCard info={athletes[2]} />
             <AtheleteCard info={athletes[3]} />
             <AtheleteCard info={athletes[4]} />
-          </div>
-          <div className="d-flex flex-column justify-content-center mb-lg-5">
+          </Col>
+          <Col lg={4} md={12} sm={12}>
             <AtheleteCard info={athletes[5]} />
             <AtheleteCard info={athletes[6]} />
-          </div>
-        </div>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
