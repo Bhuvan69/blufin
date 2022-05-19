@@ -47,7 +47,7 @@ const ContactUsSection = () => {
                   <div className={styles.iconText}>
                     <Image src="icons/email.svg" />
                     <div className={styles.text}>
-                      contactus@bluefinfoundation.com
+                      contactus@blufinfoundation.com
                     </div>
                   </div>
                 </a>

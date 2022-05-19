@@ -15,6 +15,11 @@ const MediaSection = () => {
       content: "Push to build a dream on",
       link: "https://bangaloremirror.indiatimes.com/bangalore/others/push-to-build-a-dream-on/articleshow/89931399.cms",
     },
+    {
+      logo: "media/our-bangalore.png",
+      content: "A helping hand to reach sporting glory",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:6913055513152802816",
+    },
   ];
   return (
     <div className={styles.mediaSection}>

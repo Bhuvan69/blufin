@@ -13,19 +13,22 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   const socialMedia = (
     <div className={`${styles.socialMedia} my-2`}>
-      <a href="https://www.facebook.com/BakersMarketUK/">
+      <a href="https://www.facebook.com/blufinfoundation/" target="_blank">
         <img src="socialMedia/facebook.svg" alt="Facebook" />
       </a>
-      <a href="https://www.instagram.com/bakersmarketuk/">
+      <a href="https://www.instagram.com/blufinfoundation/" target="_blank">
         <img src="socialMedia/instagram.svg" alt="Instagram" />
       </a>
-      <a href="https://twitter.com/BakersMarketUK">
+      <a href="https://twitter.com/blufinfoundati1?lang=en" target="_blank">
         <img src="socialMedia/twitter.svg" alt="Twitter" />
       </a>
-      <a href="https://www.youtube.com/channel/UCwz4l_CJAbeJKvdHZuob9Yg/">
+      {/* <a href="https://www.youtube.com/channel/UCwz4l_CJAbeJKvdHZuob9Yg/" target="_blank">
         <img src="socialMedia/youtube.svg" alt="Youtube" />
-      </a>
-      <a href="https://www.linkedin.com/company/bakersmarket">
+      </a> */}
+      <a
+        href="https://www.linkedin.com/company/blufin-foundation"
+        target="_blank"
+      >
         <img src="socialMedia/linkedin.svg" alt="LinkedIn" />
       </a>
     </div>
@@ -67,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="d-flex justify-content-between align-items-center flex-column flex-lg-row">
-          {socialMedia} <div>© Copyright 2022 Bluefin Foundation</div>
+          {socialMedia} <div>© Copyright 2022 Blufin Foundation</div>
         </div>
       </Container>
     </div>
