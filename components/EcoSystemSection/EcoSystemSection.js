@@ -50,11 +50,7 @@ const EcoSystemSection = () => {
   return (
     <div className={styles.ecosystemSection}>
       <Container className="pt-5 pb-5">
-        <CommonHeader
-          header="Ecosystem"
-          subHeader="Para-swimming"
-          white={false}
-        />
+        <CommonHeader header="Ecosystem" subHeader="" white={false} />
         <Row className="mt-5">
           <Col sm={12} md={2} className="">
             <div className={styles.header}>Donors</div>

@@ -67,7 +67,7 @@ const Landing = (props) => {
         <div id={TEAM_ID}>
           <TeamSection />
         </div>
-        <div id={MEDIA_ID}>
+        <div id={MEDIA_ID} className="blue-background">
           <MediaSection />
         </div>
         <div>
