@@ -10,6 +10,11 @@ const MediaSection = () => {
         "Advocating Accessibility! This Foundation Works Towards Taking Sports To The Grassroots",
       link: "https://thelogicalindian.com/inclusivity/blufin-foundation-32205",
     },
+    {
+      logo: "media/bangalore-mirror.png",
+      content: "Push to build a dream on",
+      link: "https://bangaloremirror.indiatimes.com/bangalore/others/push-to-build-a-dream-on/articleshow/89931399.cms",
+    },
   ];
   return (
     <div className={styles.mediaSection}>

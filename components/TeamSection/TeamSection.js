@@ -6,13 +6,13 @@ const TeamSection = () => {
   const teamMembers = [
     {
       image: "team/Amar.jpg",
-      name: "Amar",
+      name: "Amar Prabhu",
       designation: "Trustee",
       detail: "Solution Architect, Leading AI firm",
     },
     {
       image: "team/Vyshak.jpg",
-      name: "Vyshak",
+      name: "Vyshak Iyengar",
       designation: "Trustee",
       detail: "Managment Consultant, Big 5 consulting",
     },
@@ -24,25 +24,25 @@ const TeamSection = () => {
     },
     {
       image: "team/Ashwin.jpg",
-      name: "Ashwin",
+      name: "Ashwin Suresh",
       designation: "Growth",
       detail: "Sr Data Analyst, Silicon Valley Ed-Tech firm",
     },
     {
       image: "team/Pavan.jpg",
-      name: "Pavan",
+      name: "Pavan Kumar",
       designation: "Marketing",
       detail: "Product Marketing, Leading AI firm",
     },
     {
       image: "team/Bhuvan.jpg",
-      name: "Bhuvan",
+      name: "Bhuvan Surya Purushothama B N",
       designation: "Tech",
       detail: "Engineer, Leading tech firm",
     },
     {
       image: "team/Nidhi.jpg",
-      name: "Nidhish",
+      name: "Nidhish Kudwalli",
       designation: "Trustee",
       detail: "Swim coach & National softball player",
     },
