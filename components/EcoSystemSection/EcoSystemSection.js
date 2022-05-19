@@ -45,7 +45,7 @@ const EcoSystemSection = () => {
     {
       image: "experts/cheryl.jpeg",
       name: "Cheryl Braggs",
-      body: ["Communications"],
+      body: ["Communications and content specialist"],
     },
   ];
   return (
