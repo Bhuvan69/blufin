@@ -50,7 +50,7 @@ const TeamSection = () => {
   return (
     <div className={styles.teamSection}>
       <Container className="pt-5 pb-5">
-        <CommonHeader header="Team" subHeader="" white={true} />
+        <CommonHeader header="Founders" subHeader="" white={true} />
         <Row className="mt-5">
           {teamMembers.map((member) => (
             <Col

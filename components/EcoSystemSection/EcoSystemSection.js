@@ -13,6 +13,7 @@ const EcoSystemSection = () => {
     "partners/shishu.jpg",
     "partners/mlc.png",
     "partners/fastnup.png",
+    "partners/lbtc.png",
   ];
   const experts = [
     {
