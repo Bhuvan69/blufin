@@ -18,7 +18,7 @@ const TeamSection = () => {
     },
     {
       image: "team/Sharath.jpg",
-      name: "Sharath M Gayakwad",
+      name: "Sharath Gayakwad",
       designation: "Trustee",
       detail: "International Para swimmer, Arjuna awardee",
     },
@@ -36,7 +36,7 @@ const TeamSection = () => {
     },
     {
       image: "team/Bhuvan.jpg",
-      name: "Bhuvan Surya Purushothama B N",
+      name: "Bhuvan Nagaraj",
       designation: "Tech",
       detail: "Engineer, Leading tech firm",
     },

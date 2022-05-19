@@ -31,9 +31,9 @@ const AboutSection = () => {
       <div className={styles.mainSection}>
         <Container id="main-container">
           <div className={styles.headerWrapper}>
-            <div className={styles.header}>Walk</div>
-            <div className={styles.header}>Run</div>
-            <div className={styles.header}>Crawl</div>
+            <div className={styles.header}>Train</div>
+            <div className={styles.header}>Soar</div>
+            <div className={styles.header}>Shine</div>
           </div>
         </Container>
       </div>
@@ -45,19 +45,18 @@ const AboutSection = () => {
             white={false}
           />
           <div className={styles.about}>
-            BluFin is a sports foundation founded by Sharath Gayakwad,
-            Paralympian & Arjuna Awardee to train under privilege kids and
-            specially abled kids with a vision to make them international
-            champions.
+            Blufin Foundation is a sports foundation spearheaded by Sharath
+            Gayakwad, Paralympian & Arjuna Awardee to build an inclusive
+            sporting ecosystem
           </div>
-          <VisionMission
+          {/* <VisionMission
             title="Our Vision"
             body="To have over 50% of the athletes representing India at the olympics and Paralympics from Blufin."
           />
           <VisionMission
             title="Our Mission"
             body="To have over 50% of the athletes representing India at the olympics and Paralympics from Blufin."
-          />
+          /> */}
         </div>
         <div className={styles.sectionImage}>
           <img src="background/about-athlete.png" />

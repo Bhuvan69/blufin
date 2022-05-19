@@ -8,13 +8,29 @@
     .athleteCard {
       position: relative;
       padding-bottom: 30px;
-      .image {
+      .imageSection {
         position: relative;
-        width: 350px;
-        height: 405px;
-        object-fit: cover;
-        filter: grayscale(20%);
+        .image {
+          width: 350px;
+          height: 405px;
+          object-fit: cover;
+          filter: grayscale(20%);
+        }
+        .imageOverlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(202, 202, 214, 0) 50%,
+            rgba(111, 111, 111, 0.7357536764705883) 100%
+          );
+        }
       }
+
       .name {
         position: absolute;
         bottom: 50px;

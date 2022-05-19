@@ -134,7 +134,11 @@ const AthleteSection = () => {
         role="button"
         onClick={() => openModal(athlete.info)}
       >
-        <Image src={athlete.info.image} className={styles.image} />
+        <div className={styles.imageSection}>
+          <Image src={athlete.info.image} className={styles.image} />
+          <div className={styles.imageOverlay} />
+        </div>
+
         <div className={styles.name}>{athlete.info.name}</div>
       </div>
     );

@@ -38,7 +38,7 @@ const EcoSystemSection = () => {
     },
     {
       image: "experts/anirudh.jpg",
-      name: "Anirudh A Kulkarni",
+      name: "Anirudh Kulkarni",
       body: ["Legal Advisor"],
     },
     {
