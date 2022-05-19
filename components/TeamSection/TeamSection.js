@@ -43,7 +43,7 @@ const TeamSection = () => {
     {
       image: "team/Nidhi.jpg",
       name: "Nidhish Kudwalli",
-      designation: "Trustee",
+      designation: "Programs",
       detail: "Swim coach & National softball player",
     },
   ];
