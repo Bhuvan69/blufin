@@ -14,6 +14,7 @@ const EcoSystemSection = () => {
     "partners/mlc.png",
     "partners/fastnup.png",
     "partners/lbtc.png",
+    "partners/cmd.svg",
   ];
   const experts = [
     {
