@@ -14,10 +14,9 @@ import {
 } from "../../utils/constants";
 import styles from "./Navbar.module.scss";
 import { useState } from "react";
+import Scrollspy from "react-scrollspy";
 
 export default function BlufinNavbar() {
-  const [activeKey, setActiveKey] = useState(`landing#${ABOUT_ID}`);
-  const router = useRouter();
   return (
     <>
       <Navbar
@@ -41,9 +40,20 @@ export default function BlufinNavbar() {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className={`${styles.navLinks} justify-content-end`}>
-          <Nav
-            activeKey={activeKey}
-            onSelect={(selectedKey) => setActiveKey(selectedKey)}
+          {/* <Nav> */}
+          <Scrollspy
+            items={[
+              ABOUT_ID,
+              WHAT_DO_WE_DO_ID,
+              PROGRAMS_ID,
+              ATHLETES_ID,
+              ECOSYSTEM_ID,
+              TEAM_ID,
+              MEDIA_ID,
+              CONTACT_ID,
+            ]}
+            currentClassName="active"
+            className="d-flex flex-lg-row flex-md-column flex-column"
           >
             <Nav.Link className="bf-nav-link" href={`landing#${ABOUT_ID}`}>
               About
@@ -72,8 +82,9 @@ export default function BlufinNavbar() {
             <Nav.Link className="bf-nav-link" href={`landing#${CONTACT_ID}`}>
               Contact
             </Nav.Link>
-            {/* <Button>Get in touch</Button> */}
-          </Nav>
+          </Scrollspy>
+          {/* <Button>Get in touch</Button> */}
+          {/* </Nav> */}
         </Navbar.Collapse>
       </Navbar>
     </>

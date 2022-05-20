@@ -42,7 +42,7 @@ const EcoSystemSection = () => {
     {
       image: "experts/silky.jpg",
       name: "Silky Mahajan",
-      body: ["Renowned Sports Nutrition Expertrts Medicine Specialist"],
+      body: ["Renowned Sports Nutrition Expert Medicine Specialist"],
     },
     {
       image: "experts/anirudh.jpg",

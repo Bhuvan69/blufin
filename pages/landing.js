@@ -32,7 +32,6 @@ const Landing = (props) => {
     const athletesElement = document.getElementById(ATHLETES_ID);
     const mediaElement = document.getElementById(MEDIA_ID);
     const contactElement = document.getElementById(CONTACT_ID);
-
     // aboutElement.style.paddingTop = `${navbarElementHeight}px`;
     programElement.style.paddingTop = `${navbarElementHeight}px`;
     teamElement.style.paddingTop = `${navbarElementHeight}px`;
@@ -42,40 +41,39 @@ const Landing = (props) => {
     mediaElement.style.paddingTop = `${navbarElementHeight}px`;
     contactElement.style.paddingTop = `${navbarElementHeight}px`;
   };
+
   useEffect(() => {
     setDivHeight();
   }, []);
 
   return (
     <DefaultLayout>
+      <div id={ABOUT_ID}>
+        <AboutSection />{" "}
+      </div>
+      <div id={WHAT_DO_WE_DO_ID}>
+        <WhatWeDoSection />
+      </div>
+      <div id={PROGRAMS_ID}>
+        <ProgramSection />
+      </div>
+      <div id={ATHLETES_ID}>
+        <AthleteSection />
+      </div>
+      <div id={ECOSYSTEM_ID}>
+        <EcoSystemSection />
+      </div>
+      <div id={TEAM_ID}>
+        <TeamSection />
+      </div>
+      <div id={MEDIA_ID} className="blue-background">
+        <MediaSection />
+      </div>
       <div>
-        <div id={ABOUT_ID}>
-          <AboutSection />{" "}
-        </div>
-        <div id={WHAT_DO_WE_DO_ID}>
-          <WhatWeDoSection />
-        </div>
-        <div id={PROGRAMS_ID}>
-          <ProgramSection />
-        </div>
-        <div id={ATHLETES_ID}>
-          <AthleteSection />
-        </div>
-        <div id={ECOSYSTEM_ID}>
-          <EcoSystemSection />
-        </div>
-        <div id={TEAM_ID}>
-          <TeamSection />
-        </div>
-        <div id={MEDIA_ID} className="blue-background">
-          <MediaSection />
-        </div>
-        <div>
-          <GallerySection />
-        </div>
-        <div id={CONTACT_ID}>
-          <ContactUsSection />
-        </div>
+        <GallerySection />
+      </div>
+      <div id={CONTACT_ID}>
+        <ContactUsSection />
       </div>
     </DefaultLayout>
   );
