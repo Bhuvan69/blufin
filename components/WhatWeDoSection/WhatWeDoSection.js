@@ -1,9 +1,3 @@
-import {
-  faChild,
-  faPeopleArrows,
-  faTrophy,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import CommonHeader from "../CommonHeader/CommonHeader";
 import styles from "./WhatWeDoSection.module.scss";

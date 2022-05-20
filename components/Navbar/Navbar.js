@@ -22,7 +22,7 @@ export default function BlufinNavbar() {
       <Navbar
         expand="lg"
         collapseOnSelect
-        fixed="top"
+        sticky="top"
         bg="white"
         id={NAVBAR_ID}
         className={`${styles.customNavbar} blufin-navbar justify-content-between`}
@@ -52,6 +52,7 @@ export default function BlufinNavbar() {
               MEDIA_ID,
               CONTACT_ID,
             ]}
+            offset={-100}
             currentClassName="active"
             className="d-flex flex-lg-row flex-md-column flex-column"
           >
@@ -84,7 +85,6 @@ export default function BlufinNavbar() {
             </Nav.Link>
           </Scrollspy>
           {/* <Button>Get in touch</Button> */}
-          {/* </Nav> */}
         </Navbar.Collapse>
       </Navbar>
     </>
