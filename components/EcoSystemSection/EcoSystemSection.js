@@ -25,7 +25,14 @@ const EcoSystemSection = () => {
       ],
     },
     {
-      image: "experts/mahesh.png",
+      image: "experts/AnirudhLBTC.JPG",
+      name: "Anirudh Dutt",
+      body: [
+        "Founder & CEO, Let's be the change, one of the biggest NGOs in sustainability & solid waste management",
+      ],
+    },
+    {
+      image: "experts/mahesh.jpeg",
       name: "Mahesh Kumar",
       body: [
         "Strength and Conditioning Coach",
