@@ -7,7 +7,7 @@ const ProgramSection = () => {
     {
       title: "Grassroots",
       body: [
-        "Over 77 kids from the Shishu Mandir children's home being provided free Swimming lessons along with required equipment",
+        "Over 102 kids from the Shishu Mandir children's home being provided free Swimming lessons along with required equipment",
         "In partnership with Zee Swim Academy",
       ],
       image: "/program/grassroot.jpg",
