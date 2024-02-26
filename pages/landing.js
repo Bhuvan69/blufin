@@ -1,5 +1,5 @@
 import DefaultLayout from "../components/DefaultLayout";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import GallerySection from "../components/GallerySection/GallerySection";
 import WhatWeDoSection from "../components/WhatWeDoSection/WhatWeDoSection";
 import {
@@ -20,8 +20,11 @@ import AthleteSection from "../components/AthleteSection/AthleteSection";
 import EcoSystemSection from "../components/EcoSystemSection/EcoSystemSection";
 import MediaSection from "../components/MediaSection/MediaSection";
 import ContactUsSection from "../components/ContactUsSection/ContactUsSection";
+import { Image, Modal } from "react-bootstrap";
 
 const Landing = (props) => {
+  const [show, setShow] = useState(false);
+
   const setDivHeight = () => {
     const navbarElementHeight = document.getElementById(NAVBAR_ID).offsetHeight;
     const aboutElement = document.getElementById(ABOUT_ID);
@@ -44,10 +47,20 @@ const Landing = (props) => {
 
   useEffect(() => {
     setDivHeight();
+    setShow(true);
   }, []);
 
   return (
     <DefaultLayout>
+      <Modal
+        show={show}
+        centered={true}
+        onHide={() => {
+          setShow(false);
+        }}
+      >
+        <Image src="popup/popup.jpeg" />
+      </Modal>
       <div id={ABOUT_ID}>
         <AboutSection />{" "}
       </div>
