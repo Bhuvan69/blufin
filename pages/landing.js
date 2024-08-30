@@ -27,7 +27,6 @@ const Landing = (props) => {
 
   const setDivHeight = () => {
     const navbarElementHeight = document.getElementById(NAVBAR_ID).offsetHeight;
-    const aboutElement = document.getElementById(ABOUT_ID);
     const programElement = document.getElementById(PROGRAMS_ID);
     const teamElement = document.getElementById(TEAM_ID);
     const expertElement = document.getElementById(ECOSYSTEM_ID);
@@ -35,7 +34,6 @@ const Landing = (props) => {
     const athletesElement = document.getElementById(ATHLETES_ID);
     const mediaElement = document.getElementById(MEDIA_ID);
     const contactElement = document.getElementById(CONTACT_ID);
-    // aboutElement.style.paddingTop = `${navbarElementHeight}px`;
     programElement.style.paddingTop = `${navbarElementHeight}px`;
     teamElement.style.paddingTop = `${navbarElementHeight}px`;
     expertElement.style.paddingTop = `${navbarElementHeight}px`;
