@@ -8,6 +8,7 @@ const EcoSystemSection = () => {
     "donors/Accel.png",
     "donors/Kaleyra.jpg",
     "donors/TowardsEqual.png",
+    "donors/Yethi.png",
   ];
   const partners = [
     "partners/zeeswim.png",

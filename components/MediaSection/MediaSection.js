@@ -5,6 +5,12 @@ import styles from "./MediaSection.module.scss";
 const MediaSection = () => {
   const medias = [
     {
+      logo: "media/yourstory.svg",
+      content:
+        "BluFin Foundation led by Paralympian Sharath Gayakwad aims to nurture and develop an inclusive sporting ecosystem",
+      link: "https://yourstory.com/socialstory/2024/08/blufin-foundation-led-by-paralympian-sharath-gayak",
+    },
+    {
       logo: "media/logical-indian.png",
       content:
         "Advocating Accessibility! This Foundation Works Towards Taking Sports To The Grassroots",
