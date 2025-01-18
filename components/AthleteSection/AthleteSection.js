@@ -194,7 +194,7 @@ const AthleteSection = () => {
       <Container className="pt-5 pb-5">
         <CommonHeader
           header="INTERNATIONAL ATHLETES"
-          subHeader="OUR ACHIVEMENT FROM"
+          subHeader="OUR"
           white={true}
         />
         <Row className={styles.athletesCards}>
