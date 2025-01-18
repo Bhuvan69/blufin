@@ -22,12 +22,11 @@ import MediaSection from "../components/MediaSection/MediaSection";
 import ContactUsSection from "../components/ContactUsSection/ContactUsSection";
 import { Image, Modal } from "react-bootstrap";
 
-const Landing = (props) => {
+const Home = (props) => {
   const [show, setShow] = useState(false);
 
   const setDivHeight = () => {
     const navbarElementHeight = document.getElementById(NAVBAR_ID).offsetHeight;
-    const aboutElement = document.getElementById(ABOUT_ID);
     const programElement = document.getElementById(PROGRAMS_ID);
     const teamElement = document.getElementById(TEAM_ID);
     const expertElement = document.getElementById(ECOSYSTEM_ID);
@@ -35,7 +34,6 @@ const Landing = (props) => {
     const athletesElement = document.getElementById(ATHLETES_ID);
     const mediaElement = document.getElementById(MEDIA_ID);
     const contactElement = document.getElementById(CONTACT_ID);
-    // aboutElement.style.paddingTop = `${navbarElementHeight}px`;
     programElement.style.paddingTop = `${navbarElementHeight}px`;
     teamElement.style.paddingTop = `${navbarElementHeight}px`;
     expertElement.style.paddingTop = `${navbarElementHeight}px`;
@@ -60,7 +58,6 @@ const Landing = (props) => {
         }}
       >
         <Image src="popup/popup.jpeg" />
-
         <a href="/reports/activity-report.pdf" target="_blank">
           <div className="pt-2 pb-2 text-center w-100">Our Activity Report</div>
         </a>
@@ -96,4 +93,4 @@ const Landing = (props) => {
   );
 };
 
-export default Landing;
+export default Home;
