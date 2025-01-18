@@ -56,35 +56,38 @@ export default function BlufinNavbar() {
             currentClassName="active"
             className="d-flex flex-lg-row flex-md-column flex-column"
           >
-            <Nav.Link className="bf-nav-link" href={`landing#${ABOUT_ID}`}>
+            <Nav.Link className="bf-nav-link" href={`#${ABOUT_ID}`}>
               About
+            </Nav.Link>
+            <Nav.Link className="bf-nav-link" href={`#${WHAT_DO_WE_DO_ID}`}>
+              What we do?
+            </Nav.Link>
+            <Nav.Link className="bf-nav-link" href={`#${PROGRAMS_ID}`}>
+              Programs
+            </Nav.Link>
+            <Nav.Link className="bf-nav-link" href={`#${ATHLETES_ID}`}>
+              Athletes
+            </Nav.Link>
+            <Nav.Link className="bf-nav-link" href={`#${ECOSYSTEM_ID}`}>
+              Ecosystem
+            </Nav.Link>
+            <Nav.Link className="bf-nav-link" href={`#${TEAM_ID}`}>
+              Team
+            </Nav.Link>
+            <Nav.Link className="bf-nav-link" href={`#${MEDIA_ID}`}>
+              Media
+            </Nav.Link>
+            <Nav.Link className="bf-nav-link" href={`#${CONTACT_ID}`}>
+              Contact
             </Nav.Link>
             <Nav.Link
               className="bf-nav-link"
-              href={`landing#${WHAT_DO_WE_DO_ID}`}
+              href="/reports/activity-report.pdf"
+              target="_blank"
             >
-              What we do?
-            </Nav.Link>
-            <Nav.Link className="bf-nav-link" href={`landing#${PROGRAMS_ID}`}>
-              Programs
-            </Nav.Link>
-            <Nav.Link className="bf-nav-link" href={`landing#${ATHLETES_ID}`}>
-              Athletes
-            </Nav.Link>
-            <Nav.Link className="bf-nav-link" href={`landing#${ECOSYSTEM_ID}`}>
-              Ecosystem
-            </Nav.Link>
-            <Nav.Link className="bf-nav-link" href={`landing#${TEAM_ID}`}>
-              Team
-            </Nav.Link>
-            <Nav.Link className="bf-nav-link" href={`landing#${MEDIA_ID}`}>
-              Media
-            </Nav.Link>
-            <Nav.Link className="bf-nav-link" href={`landing#${CONTACT_ID}`}>
-              Contact
+              Activity Report
             </Nav.Link>
           </Scrollspy>
-          {/* <Button>Get in touch</Button> */}
         </Navbar.Collapse>
       </Navbar>
     </>

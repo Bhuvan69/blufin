@@ -1,57 +1,42 @@
 .athleteSection {
   background-color: #012060;
   .athletesCards {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 0;
+    margin-top: 30px;
     .athleteCard {
       position: relative;
       margin-bottom: 30px;
+      padding: 20px;
       .imageSection {
         position: relative;
+        margin-bottom: 20px;
         .image {
-          width: 100%;
-          height: 405px;
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
           object-fit: cover;
-          filter: grayscale(20%);
-        }
-        .imageOverlay {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: linear-gradient(
-            180deg,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(202, 202, 214, 0) 50%,
-            rgba(111, 111, 111, 0.7357536764705883) 100%
-          );
         }
       }
-
       .name {
-        position: absolute;
-        bottom: 50px;
-        left: 20px;
         color: white;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 45px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
         text-transform: uppercase;
       }
-    }
-    .athleteCard:hover {
-      .imageOverlay:hover {
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(119, 119, 126, 0.5) 50%,
-          rgba(111, 111, 111, 0.7357536764705883) 100%
-        );
+
+      .sport {
+        color: red;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        text-transform: uppercase;
       }
-      box-shadow: 10px 10px 7px rgb(0 0 0 / 30%);
+      .line {
+        height: 2px;
+        background: white;
+        width: 30%;
+        margin-top: 15px;
+      }
     }
   }
 }

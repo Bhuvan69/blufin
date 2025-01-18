@@ -50,14 +50,17 @@ const Footer = () => {
             className={`${styles.footerLeft} d-none d-lg-flex d-md-none justify-content-between`}
           >
             <div className="d-flex">
-              <NavLink href={`landing#${ABOUT_ID}`} className="pl-0">
+              <NavLink href={`#${ABOUT_ID}`} className="pl-0">
                 About us
               </NavLink>
-              <NavLink href={`landing#${PROGRAMS_ID}`}>Programs</NavLink>
-              <NavLink href={`landing#${ATHLETES_ID}`}>Athletes</NavLink>
-              <NavLink href={`landing#${ECOSYSTEM_ID}`}>Ecosystem</NavLink>
-              <NavLink href={`landing#${TEAM_ID}`}>Team</NavLink>
-              <NavLink href={`landing#${MEDIA_ID}`}>Media</NavLink>
+              <NavLink href={`#${PROGRAMS_ID}`}>Programs</NavLink>
+              <NavLink href={`#${ATHLETES_ID}`}>Athletes</NavLink>
+              <NavLink href={`#${ECOSYSTEM_ID}`}>Ecosystem</NavLink>
+              <NavLink href={`#${TEAM_ID}`}>Team</NavLink>
+              <NavLink href={`#${MEDIA_ID}`}>Media</NavLink>
+              <NavLink href="/reports/activity-report.pdf" target="_blank">
+                Activity Report
+              </NavLink>
             </div>
             <div className="d-flex text-center align-items-center">
               <div className={styles.logoText}>BluFin Foundation</div>

@@ -88,7 +88,7 @@ const AthleteSection = () => {
       awards: [],
     },
     {
-      name: "PRATHAMESH SAMBHAJI KAPADE",
+      name: "Prathamesh Kapade",
       image: "/athletes/prathamesh.png",
       dob: "1/1/2002",
       program: "For The Win",
@@ -101,7 +101,7 @@ const AthleteSection = () => {
       awards: [],
     },
     {
-      name: "PAVAN DHANANJAYA",
+      name: "Pavan Dhananjaya",
       image: "/athletes/pavan.png",
       dob: "1/1/2007",
       program: "For The Win",
@@ -112,6 +112,45 @@ const AthleteSection = () => {
       },
       achievements: [
         "Junior National Aquatic Championships 2021 - 5 gold, Individual champtionship",
+      ],
+      awards: [],
+    },
+    {
+      name: "Ajibur Molla",
+      image: "/athletes/ajibur.jpeg",
+      dob: "1/1/1993",
+      program: "For The Win",
+      sport: "para-swimming",
+      medals: {
+        national: { gold: 33, silver: 11, bronze: 7 },
+        international: { gold: 0, silver: 0, bronze: 0 },
+      },
+      achievements: [
+        "Participated at the 2023 Citi Para Swimming World Series Singapore from 29 April to 1 May 2023",
+        "Was ranked World No. 21 in the 100m Breaststroke",
+        "Was ranked Asian No. 6 in the 100m Breaststroke",
+        "Have previously held the national record in 50m Freestyle, 100m Freestyle, 50m Backstroke & 100m Backstroke",
+        "Have received best swimmer trophy in various National Championships",
+      ],
+      awards: [],
+    },
+    {
+      name: "Ananya Ganglani",
+      image: "/athletes/ananya.jpeg",
+      dob: "1/1/2010",
+      program: "For The Win",
+      sport: "para-swimming",
+      medals: {
+        national: { gold: 1, silver: 0, bronze: 2 },
+        international: { gold: 0, silver: 0, bronze: 0 },
+      },
+      achievements: [
+        "Won Gold Medal in 100m butterfly and 2 Bronze medals in 50m and 100m freestyle events at the 24th Para Nationals in Goa held from 19th to 22nd October 2024",
+        "Participated in The DPS National Swimming Meet Girls (open) -2024 at NOIDA with able bodied swimmers",
+        "Participated in SGFI state level competition 2024 in Bhopal, MP after qualifying in the district with a silver medal in 50m butterfly with able bodied swimmers",
+        "Have won 1 gold and 1 bronze medal at sage international school non medalist competition with able bodied swimmers in 2023",
+        "Won 1 gold in 50m fly and 1 silver medal in 4x50 freestyle relay at JSWS competition held at DPS Rau, Indore with able bodied swimmers",
+        "Have won a total of 6 medals with 4 gold, 1 silver and 2 bronze medals at Inter-House swimming competition held by DPS Neelbad in 2022,2023 and 2024",
       ],
       awards: [],
     },
@@ -127,22 +166,24 @@ const AthleteSection = () => {
     setShowModal(true);
   };
 
-  const AtheleteCard = (athlete) => {
+  const AtheleteCard = ({ athlete }) => {
     return (
       <div
         className={styles.athleteCard}
         role="button"
-        onClick={() => openModal(athlete.info)}
+        onClick={() => openModal(athlete)}
       >
         <div className={styles.imageSection}>
-          <Image src={athlete.info.image} className={styles.image} />
-          <div className={styles.imageOverlay} />
+          <Image src={athlete.image} className={styles.image} />
         </div>
 
-        <div className={styles.name}>{athlete.info.name}</div>
+        <div className={styles.name}>{athlete.name}</div>
+        <div className={styles.sport}>{athlete.sport}</div>
+        <div className={styles.line} />
       </div>
     );
   };
+
   return (
     <div className={styles.athleteSection}>
       <AthleteModal
@@ -157,19 +198,11 @@ const AthleteSection = () => {
           white={true}
         />
         <Row className={styles.athletesCards}>
-          <Col lg={4} md={12} sm={12}>
-            <AtheleteCard info={athletes[0]} />
-            <AtheleteCard info={athletes[1]} />
-          </Col>
-          <Col lg={4} md={12} sm={12}>
-            <AtheleteCard info={athletes[2]} />
-            <AtheleteCard info={athletes[3]} />
-            <AtheleteCard info={athletes[4]} />
-          </Col>
-          <Col lg={4} md={12} sm={12}>
-            <AtheleteCard info={athletes[5]} />
-            <AtheleteCard info={athletes[6]} />
-          </Col>
+          {athletes.map((athlete) => (
+            <Col lg={3} md={4}>
+              <AtheleteCard athlete={athlete} />
+            </Col>
+          ))}
         </Row>
       </Container>
     </div>

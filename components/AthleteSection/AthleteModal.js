@@ -89,7 +89,7 @@ const AthleteModal = (props) => {
                 )}
                 <div className="mt-3">
                   {athlete.achievements.map((achiv) => (
-                    <div className={styles.point}>{achiv}</div>
+                    <li className={styles.point}>{achiv}</li>
                   ))}
                 </div>
               </div>
