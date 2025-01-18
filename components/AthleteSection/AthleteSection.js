@@ -193,7 +193,7 @@ const AthleteSection = () => {
       />
       <Container className="pt-5 pb-5">
         <CommonHeader
-          header="ATHLETES"
+          header="INTERNATIONAL ATHLETES"
           subHeader="OUR ACHIVEMENT FROM"
           white={true}
         />
